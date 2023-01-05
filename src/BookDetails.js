@@ -15,11 +15,12 @@ function BookDetails() {
       }
     ])
     
+    const [loading,setLoading]=useState(true)
 
     useEffect(()=>{
         fetch('/api/book').then(res=>{
-            if(res.ok)
-         return res.json()
+            if(res.ok){ setLoading(false)
+         return res.json()}
     
         }).then(js=>SetBooks(js))
       
@@ -32,9 +33,19 @@ function BookDetails() {
   return (
     
 <>
-{books.filter(books=>{
+{ 
+
+ loading?<div class="text-center"  >
+<div className="spinner-border "   role="status">
+
+</div>
+</div>:
+
+
+books.filter(books=>{
 if(params.bookid==books.isbn)
     return books
+   
 }
 ).map(book=>
 <div class="row">

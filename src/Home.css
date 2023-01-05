@@ -35,3 +35,8 @@
   .card:hover {
     box-shadow: 16px 16px 32px 0 rgba(0.2,0.2,0.2,0.2);
   }
+  .spinner-border{
+margin-top: 20rem;
+width: 30px;
+
+  }

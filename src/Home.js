@@ -2,8 +2,12 @@ import React,{useState,useEffect} from "react";
 import "./Home.css";
 import Product from "./Product";
 import ReactPaginate from 'react-paginate';
+import { trackPromise } from 'react-promise-tracker';
+import { fetchWithDelay } from './fetch';
+import axios from "axios";
+import BounceLoader from 'react-spinners/BounceLoader'
 function Home({list,SetList}) {
-  
+    const [loading,setLoading]=useState(true)
   const [books,SetBooks]=useState([
     {title: '',
     description:'',
@@ -20,22 +24,40 @@ function handlePageClick({ selected: selectedPage }) {
 }
 
 useEffect(()=>{
+ 
     fetch('/api/book').then(res=>{
-        if(res.ok)
+        if(res.ok){
+          setLoading(false)
+
      return res.json()
+        }
+
 
     }).then(js=>SetBooks(js))
     console.log(list)
+
+    
 },[list])
 
 const [currentPage, setCurrentPage] = useState(0);
   const PER_PAGE = 4;
   const offset = currentPage * PER_PAGE;
  const pageCount = Math.ceil(books.length / PER_PAGE);
+
+
   return (
-    <div className="home">
-     
+    
+ 
+   <div className="home">
+    
+  
+    {  loading?<div class="text-center"  >
+  <div className="spinner-border "   role="status">
+
+  </div>
+</div>:
       <div className="home__container">
+
         <img
           className="home__image"
           src="https://manojchahar.com/wp-content/uploads/2020/10/becca-tapert-Gn.jpg"
@@ -93,8 +115,9 @@ const [currentPage, setCurrentPage] = useState(0);
         activeClassName="active"
         renderOnZeroPageCount={null}
       />
+
       </div>
-  
+}
     </div>
   );
 }

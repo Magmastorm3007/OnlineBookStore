@@ -2,7 +2,6 @@
   "name": "amazon-clone",
   "version": "0.1.0",
   "private": true,
-  
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -23,8 +22,10 @@
     "react-currency-format": "^1.1.0",
     "react-dom": "^18.0.0",
     "react-paginate": "^8.1.4",
+    "react-promise-tracker": "^2.1.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
