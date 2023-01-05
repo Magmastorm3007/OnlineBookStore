@@ -14,6 +14,13 @@
     color:#111;
 }
 
+.checkoutProduct__info >button:hover{
+    background:#d0ae52;
+    border:1px solid;
+    margin-top: 10px;
+    border-color: #968156 #565248 #846a29;
+    color:#111;
+}
 .checkoutProduct__image{
     object-fit: contain;
     width:180px;

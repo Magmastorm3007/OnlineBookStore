@@ -87,11 +87,11 @@ function Payment() {
                  created:new Date().toLocaleString() ,
                
                }
-               axios.post('/api/details',newpayment).then(
+               axios.post('https://atlasdb.onrender.com/api/details',newpayment).then(
                  console.log('success')
                )
             
-            // paymentIntent = payment confirmation
+         
 
           
             setSucceeded(true);
