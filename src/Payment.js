@@ -47,7 +47,7 @@ function Payment() {
             
             const response = await axios({
                 method: 'post',
-                url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+                url: `https://atlasdb.onrender.com/payments/create?total=${getBasketTotal(basket) * 100}`
             }).then({
                 if(err){console.log(err)}
             });

@@ -37,7 +37,7 @@ const hideModal = () => {
       stars:i.stars,
       
     }
-    axios.post('/api/create',newBook)
+    axios.post('https://atlasdb.onrender.com/api/create',newBook)
    
   
   }
