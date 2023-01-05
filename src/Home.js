@@ -25,7 +25,7 @@ function handlePageClick({ selected: selectedPage }) {
 
 useEffect(()=>{
  
-    fetch('https://atlasdb.onrender.com/api/book').then(res=>{
+    fetch('/api/book').then(res=>{
         if(res.ok){
           setLoading(false)
 

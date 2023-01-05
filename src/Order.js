@@ -8,7 +8,7 @@ function Order() {
   const [{  user }] = UseStateValue()
   const [order,SetOrders]=useState([])
   useEffect(()=>{
-    fetch('https://atlasdb.onrender.com/api/payments').then(res=>{
+    fetch('/api/payments').then(res=>{
       if(res.ok){
         setLoading(false)
 
