@@ -54,10 +54,10 @@ function App() {const [list,SetList]=useState('')
         <Route path="/checkout" element={<Checkout/>} />
     <Route path="/" element={<Home list={list} SetList={SetList}/>} />
     <Route path='/book/:bookid' element={<BookDetails />} />
-    <Route path="OnlineBookStore/payment" element={<><Elements stripe={promise}><Payment/></Elements></>} />
-    <Route path="OnlineBookStore/orders" element={<Order/>} />
-    <Route path="OnlineBookStore/login" element={<Login/>} />
-    <Route path='OnlineBookStore/admin' element={<Admin/>}/>
+    <Route path="/payment" element={<><Elements stripe={promise}><Payment/></Elements></>} />
+    <Route path="/orders" element={<Order/>} />
+    <Route path="/login" element={<Login/>} />
+    <Route path='/admin' element={<Admin/>}/>
 
    
         </Routes>
