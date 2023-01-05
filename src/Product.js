@@ -41,7 +41,7 @@ function Product({ id, title, image, price, rating,author,isbn }) {
           <strong>{price}</strong>
         </p>
         </div>
-        <Link to={"/book/"+isbn}> <button className="product_button">View item</button></Link>  
+        <Link to={"OnlineBookStore/book/"+isbn}> <button className="product_button">View item</button></Link>  
 
     </div>
   );

@@ -18,7 +18,7 @@ function BookDetails() {
     const [loading,setLoading]=useState(true)
 
     useEffect(()=>{
-        fetch('/api/book').then(res=>{
+        fetch('https://atlasdb.onrender.com/api/book').then(res=>{
             if(res.ok){ setLoading(false)
          return res.json()}
     
