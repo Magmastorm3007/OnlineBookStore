@@ -31,9 +31,7 @@ useEffect(()=>{
 const [currentPage, setCurrentPage] = useState(0);
   const PER_PAGE = 4;
   const offset = currentPage * PER_PAGE;
-  const currentPageData = books
-    .slice(offset, offset + PER_PAGE)
-    .map(({ thumburl }) => <img src={thumburl} />);const pageCount = Math.ceil(books.length / PER_PAGE);
+ const pageCount = Math.ceil(books.length / PER_PAGE);
   return (
     <div className="home">
      
