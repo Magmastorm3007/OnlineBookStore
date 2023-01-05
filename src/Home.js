@@ -42,7 +42,7 @@ useEffect(()=>{
 const [currentPage, setCurrentPage] = useState(0);
   const PER_PAGE = 4;
   const offset = currentPage * PER_PAGE;
- const pageCount = Math.ceil(books.length / PER_PAGE);
+ const pageCount =books?Math.ceil(books.length / PER_PAGE):1;
 
 
   return (
