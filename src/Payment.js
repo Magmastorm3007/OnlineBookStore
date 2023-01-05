@@ -158,7 +158,7 @@ function Payment() {
     <label for="formGroupExampleInput2">Phone Number</label>
     <input type="text" class="form-control" required={true} id="formGroupExampleInput2" placeholder="Enter your contact details"/>
   </div> <div class="form-group">
-  <button type="submit">Confirm</button>
+  <button type="submit" style={`:hover{background:#d0ae52;}`}>Confirm</button>
   </div>
 </form>
                     </div>
