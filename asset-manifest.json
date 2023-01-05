@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Magmastorm3007.github.io/OnlineBookStore/static/css/main.d7a4f429.css",
-    "main.js": "/Magmastorm3007.github.io/OnlineBookStore/static/js/main.5be07790.js",
+    "main.js": "/Magmastorm3007.github.io/OnlineBookStore/static/js/main.fa3f7010.js",
     "static/js/787.ebd7646a.chunk.js": "/Magmastorm3007.github.io/OnlineBookStore/static/js/787.ebd7646a.chunk.js",
     "static/media/logo.svg": "/Magmastorm3007.github.io/OnlineBookStore/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Magmastorm3007.github.io/OnlineBookStore/index.html",
     "main.d7a4f429.css.map": "/Magmastorm3007.github.io/OnlineBookStore/static/css/main.d7a4f429.css.map",
-    "main.5be07790.js.map": "/Magmastorm3007.github.io/OnlineBookStore/static/js/main.5be07790.js.map",
+    "main.fa3f7010.js.map": "/Magmastorm3007.github.io/OnlineBookStore/static/js/main.fa3f7010.js.map",
     "787.ebd7646a.chunk.js.map": "/Magmastorm3007.github.io/OnlineBookStore/static/js/787.ebd7646a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7a4f429.css",
-    "static/js/main.5be07790.js"
+    "static/js/main.fa3f7010.js"
   ]
 }
