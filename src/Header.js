@@ -16,6 +16,7 @@ const authenticate=()=>{
   if(user)
   {
   auth.signOut();
+  //okay
  }
   if(!user){
   history('/')
